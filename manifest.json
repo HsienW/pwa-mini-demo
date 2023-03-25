@@ -1,0 +1,15 @@
+{
+  "name": "app to try PWA",
+  "short_name": "PWA mini",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#389472",
+  "background_color": "#aaaaff",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "375x666",
+      "type": "image/png"
+    }
+  ]
+}

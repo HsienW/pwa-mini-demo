@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PWA mini</title>
+    <link rel="stylesheet" href="./main.css"/>
+    <link rel="manifest" href="manifest.json"/>
+</head>
+<body>
+<h3>PWA Test 1</h3>
+<div class="main-test">PWA, starting - 2</div>
+<img width="100px" height="100px" src="icon.png">
+<script>
+    if (navigator.serviceWorker != null) {
+        navigator.serviceWorker
+            .register('service-worker.js')
+            .then(function (registration) {
+                console.log('Registered events at scope: ', registration.scope);
+            });
+    }
+</script>
+</body>
+</html>
